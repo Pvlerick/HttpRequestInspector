@@ -1,15 +1,24 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29318.209
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6F9F7D5A-4C89-4801-948D-0676A10F4065}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpRequestInspector", "src\HttpRequestInspector\HttpRequestInspector.csproj", "{6268F3C9-EEBB-4721-A1C8-F55459342213}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HttpRequestInspector", "src\HttpRequestInspector\HttpRequestInspector.csproj", "{6268F3C9-EEBB-4721-A1C8-F55459342213}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{BEC1E556-C8A5-400A-9BC6-97DD382BF63F}"
+	ProjectSection(SolutionItems) = preProject
+		test\sample-requests.http = test\sample-requests.http
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpRequestInspector.Test", "test\HttpRequestInspector.Test\HttpRequestInspector.Test.csproj", "{AEDB0243-3747-4D53-9036-A839F05CEFEE}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{09D49F3D-F1C1-4768-B56E-20593D2DCFEF}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		build.cake = build.cake
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,9 +28,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{6268F3C9-EEBB-4721-A1C8-F55459342213}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -36,21 +42,14 @@ Global
 		{6268F3C9-EEBB-4721-A1C8-F55459342213}.Release|x64.Build.0 = Release|Any CPU
 		{6268F3C9-EEBB-4721-A1C8-F55459342213}.Release|x86.ActiveCfg = Release|Any CPU
 		{6268F3C9-EEBB-4721-A1C8-F55459342213}.Release|x86.Build.0 = Release|Any CPU
-		{AEDB0243-3747-4D53-9036-A839F05CEFEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AEDB0243-3747-4D53-9036-A839F05CEFEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AEDB0243-3747-4D53-9036-A839F05CEFEE}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{AEDB0243-3747-4D53-9036-A839F05CEFEE}.Debug|x64.Build.0 = Debug|Any CPU
-		{AEDB0243-3747-4D53-9036-A839F05CEFEE}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{AEDB0243-3747-4D53-9036-A839F05CEFEE}.Debug|x86.Build.0 = Debug|Any CPU
-		{AEDB0243-3747-4D53-9036-A839F05CEFEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AEDB0243-3747-4D53-9036-A839F05CEFEE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AEDB0243-3747-4D53-9036-A839F05CEFEE}.Release|x64.ActiveCfg = Release|Any CPU
-		{AEDB0243-3747-4D53-9036-A839F05CEFEE}.Release|x64.Build.0 = Release|Any CPU
-		{AEDB0243-3747-4D53-9036-A839F05CEFEE}.Release|x86.ActiveCfg = Release|Any CPU
-		{AEDB0243-3747-4D53-9036-A839F05CEFEE}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{6268F3C9-EEBB-4721-A1C8-F55459342213} = {6F9F7D5A-4C89-4801-948D-0676A10F4065}
-		{AEDB0243-3747-4D53-9036-A839F05CEFEE} = {BEC1E556-C8A5-400A-9BC6-97DD382BF63F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8728F415-68D4-4B93-91E5-8E8D054858E7}
 	EndGlobalSection
 EndGlobal

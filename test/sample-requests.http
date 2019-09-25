@@ -1,0 +1,17 @@
+# hri
+GET https://localhost:5000/ HTTP/1.1
+content-type: application/json
+
+{
+    "name": "sample"
+}
+
+###
+
+# hri -p 42424 -u
+GET http://localhost:42424/test/path HTTP/1.1
+content-type: application/soap+xml
+
+<xml>
+    <what>is that</what>
+</xml>
