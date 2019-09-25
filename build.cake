@@ -1,6 +1,6 @@
 #tool "nuget:?package=GitVersion.CommandLine&version=5.0.0"
 
-var target = Argument("target", "Build");
+var target = Argument("target", "Default");
 
 Task("Build")
   .DoesForEach(GetFiles("src/**/*.*proj"), file =>
@@ -11,13 +11,6 @@ Task("Build")
     {
       Configuration = "Release"
     });
-  });
-
-Task("Test")
-  .IsDependentOn("Build")
-  .DoesForEach(GetFiles("test/**/*.*proj"), file =>
-  {
-    DotNetCoreTest(file.FullPath);
   });
 
 Task("Pack")
@@ -34,7 +27,6 @@ Task("Pack")
 
 Task("Default")
   .IsDependentOn("Build")
-  .IsDependentOn("Test")
   .IsDependentOn("Pack");
 
 RunTarget(target);
