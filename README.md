@@ -1,5 +1,7 @@
 # HTTP Request Inspector
 
+[![Build status](https://ci.appveyor.com/api/projects/status/id0ob1757ut2ierw?svg=true)](https://ci.appveyor.com/project/Pvlerick/httprequestinspector)
+
 A CLI tool to inspect HTTP requests.
 
 This tool starts a Kestrel server that listen for HTTPS requests on the given port and prints their content in the console.
