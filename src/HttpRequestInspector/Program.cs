@@ -49,7 +49,7 @@ namespace HttpRequestInspector
         private static void StartListenginForHttpsRequests(int port, int responseStatusCode)
         {
             CreateWebHostBuilder(responseStatusCode)
-                .UseUrls($"https://localhost:{port}")
+                .UseUrls($"https://0.0.0.0:{port}")
                 .Build()
                 .Run();
         }
@@ -57,7 +57,7 @@ namespace HttpRequestInspector
         private static void StartListeningForHttpRequests(int port, int responseStatusCode)
         {
             CreateWebHostBuilder(responseStatusCode)
-                .UseUrls($"http://localhost:{port}")
+                .UseUrls($"http://0.0.0.0:{port}")
                 .Build()
                 .Run();
         }
