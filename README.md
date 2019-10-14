@@ -4,8 +4,10 @@
 
 A CLI tool to inspect HTTP requests.
 
-This tool starts a Kestrel server that listen for HTTPS requests on the given port and prints their content in the console.
+This tool starts a Kestrel server that listen for HTTP requests on the given port and prints their content in the console.
 It has very limited functionalities, but I found if to be the easiest to quickly debug applications that are issuing HTTP requests.
+
+To use HTTPS, you will need to use the ```dotnet dev-certs https --trust``` first.
 
 If you are looking for something more flexible in terms of responses, have a look at the [mountebank](http://www.mbtest.org/) project.
 
